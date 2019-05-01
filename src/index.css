@@ -1,0 +1,96 @@
+
+.tetris-grid .cell {
+  width: 35px;
+  height: 35px;
+  border: solid 1px #ddd;
+  display: inline-block !important;
+}
+#score {
+  display: inline-block;
+}
+.score-board, #score, .scoreboard {
+  font-size: 17px;
+  color:black;
+  font-weight: medium;
+}
+div {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.left-half, .right-half, .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.container {
+  display: flex;
+}
+
+.left-half {
+  flex: 1;
+}
+
+.right-half {
+  flex: 1;
+}
+
+.mainmenu {
+  width: 150px;
+  margin: auto;
+}
+
+.button {
+  background-color: mistyrose;
+  border: 5px groove whitesmoke;
+  border-radius: 12px;
+  color: tomato;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 200px;
+}
+
+.submission {
+  background-color:snow;
+  border: 2px groove mistyrose;
+  border-radius: 20px;
+  height: 25%;
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 24%;
+  margin-top: 10%;
+  display: none;
+}
+
+.submissionInner {
+  margin: auto;
+}
+
+#title {
+  font-family: 'Suez One', serif;
+  font-size: 35px;
+  color: tomato;
+}
+
+body {
+  background-color: snow;
+}
+
+.scoreboard {
+  border: 1px solid mistyrose;
+  border-radius: 5px;
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+}
+
+h4 {
+  font-size:22px;
+  font-weight:bold;
+}
