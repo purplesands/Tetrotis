@@ -27,4 +27,3 @@ This repository contains Tetrotis's frontend. To install it, run:
 Tetrotis is licensed under the MIT License.
 
 Copyright 2019 Joe Mullen + Clarence Kwong.
-# Tetrotis
