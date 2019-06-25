@@ -1,4 +1,7 @@
+*{
+  transform:scale(0.8);
 
+}
 .tetris-grid .cell {
   width: 35px;
   height: 35px;
