@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', e=> {
   const restartBtn = document.querySelector('#restart')
   const submissionField = document.querySelector('.submission')
   const mainMenuBtn = document.querySelector('.mainmenu')
-  const endPoint = 'http://localhost:3000/api/v1/scores'
+  const endPoint = 'https://tetrotis-backend.herokuapp.com/api/v1/scores'
   const tetrisGrid = document.querySelector('.tetris-grid')
   const mainMenu = document.querySelector('.start-menu')
   const gameScoreBoard = document.querySelector('.score-board')
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', e=> {
 
   function createBoard() {
     document.querySelector('.score-board').innerHTML = `Score : <div class="score">0</div>`
-    gameBGM.play()
+    // gameBGM.play()
     let tetrisGrid = document.querySelector('.tetris-grid')
     tetrisGrid.innerHTML = ''
     for (let y = 0; y < height; y++) {
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', e=> {
     <button id="top50" class="button">top 50</button><br><br><br>
     </ul>
     `
-    gameBGM.stop()
+    // gameBGM.stop()
   }
 
 
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', e=> {
       document.querySelector('.top50').innerHTML = `
       <h1>~*top 50*~</h1> <br>
       `
-      const endPoint = 'http://localhost:3000/api/v1/scores'
+      const endPoint = 'https://tetrotis-backend.herokuapp.com/api/v1/scores'
       fetch(endPoint)
         .then(res => res.json())
         .then(scores => {
@@ -501,19 +501,19 @@ document.addEventListener('DOMContentLoaded', e=> {
     gameOverSound = new Sound("assets/gameover.wav")
     rotateSound = new Sound("assets/186669__fordps3__computer-boop.wav")
     multiClearSound = new Sound("assets/242855__plasterbrain__friend-request.ogg")
-    gameBGM = new Sound("assets/bgm3.wav")
+    // gameBGM = new Sound("assets/bgm3.wav")
   }
 
   renderSounds()
   renderStartMenu()
 
 
-  const gameBGMAudio = document.querySelector('body > audio:nth-child(8)')
-
-  gameBGMAudio.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-  }, false);
+  // const gameBGMAudio = document.querySelector('body > audio:nth-child(8)')
+  //
+  // gameBGMAudio.addEventListener('ended', function() {
+  //   this.currentTime = 0;
+  //   this.play();
+  // }, false);
   colorMenu.addEventListener("change", changeColorSet)
 
 
