@@ -78,7 +78,10 @@ div {
 
 body {
   background-color: snow;
-  transform:scale(0.8);
+  height:100vh;
+  width:100vw;
+  transform:scale(0.6);
+  margin-top:-5em;
 
 }
 
